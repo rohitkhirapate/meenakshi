@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -19,30 +19,30 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+    <!-- Hero2 Widget ******************* -->
 
-  <Hero
+    <Hero2
+    tagline=""
     actions={[
-      {
-        variant: 'primary',
-        text: 'Get Quote',
-        href: '#',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
+      { variant: 'primary', target: '_blank', text: 'Get Quote', href: '/contact' },
     ]}
-    image={{ src: '~/assets/images/home.png', alt: 'AstroWind Hero Image' }}
+    image={{
+      src: '~/assets/images/home.png', 
+      alt: 'Meenakshi Industries - Workshop',
+    }}
   >
     <Fragment slot="title">
-      Your Packaging, Our Priority
-      <span class="text-accent dark:text-white highlight"> Meenakshi Industries</span>
+      Your Packaging, Our Priority <br /> <span class="text-accent dark:text-white highlight"
+        >Meenakshi Industries</span> <br />
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Meenakshi Industries Is </span> A Quality Corrugated Manufacturer In Pune</span>
+        Established in Pune, <span class ="font-semibold">Meenakshi Industries </span> has been a trusted name in corrugated box manufacturing for Ten years. We're more than just a box maker; 
+        we're a partner committed to providing reliable and high-quality packaging solutions that protect your products and strengthen your brand!</span
+      >
     </Fragment>
-  </Hero>
+  </Hero2>
 
   <!-- Note Widget ******************* -->
 

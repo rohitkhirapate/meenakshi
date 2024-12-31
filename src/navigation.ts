@@ -8,7 +8,7 @@ export const headerData = {
     },
     {
       text: 'Our Story',
-      href: getPermalink("/our-story"),
+      href: getPermalink("/about"),
     },
     {
       text: 'Services',
@@ -22,25 +22,7 @@ export const headerData = {
 };
 
 export const footerData = {
-  links: [
-    {
-      title: '',
-      links: [
-
-      ],
-    },
-    {
-      title: '',
-      links: [
-
-      ],
-    },
-    {
-      title: '',
-      links: [
-
-      ],
-    },    
+  links: [   
     {
       title: 'Company',
       links: [
