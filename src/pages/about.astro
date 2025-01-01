@@ -2,8 +2,10 @@
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -22,5 +24,84 @@ const metadata = {
       Established in Pune, Meenakshi Industries has been a trusted name in corrugated box manufacturing for Ten years. We're more than just a box maker; we're a partner committed to providing reliable and high-quality packaging solutions that protect your products and strengthen your brand. From humble beginnings, we've grown by consistently delivering on our promises: superior materials, precision manufacturing, and exceptional customer service. We understand the importance of packaging in your supply chain, and that's why we're dedicated to providing you with the best solutions for your unique needs. We are proud to be based in Pune, serving businesses across Western India."
     </Fragment>
   </Hero>
+
+  <!-- Content Widget **************** -->
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Design and Prototyping',
+        description:
+          'Collaborative design phase to create the perfect packaging solution',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Manufacturing',
+        description:
+          'State-of-the-art facilities for efficient production',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Quality Control',
+        description:
+          'Rigorous quality checks to ensure all boxes meet the highest standards',
+        icon: 'tabler:presentation',
+      },
+      {
+        title: 'Delivery',
+        description:
+          'Reliable shipping and logistics for on-time deliveries',
+        icon: 'tabler:carousel-horizontal',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Our Process</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'MD-40 Fingerless Heavy Duty Dual Flute',
+        description:
+          '"Narrow & E" Interchangeable High Speed Single Face Paper Corrugating Machine (52”) Control Panel With Heaters',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Professional Appearance',
+        description:
+          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Cost-Efficiency',
+        description:
+          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Instant Download',
+        description:
+          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
+        icon: 'tabler:file-download',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Infrastructure</h3>
+    </Fragment>
+  </Content>
 
 </Layout>
