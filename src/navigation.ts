@@ -22,20 +22,26 @@ export const headerData = {
 };
 
 export const footerData = {
-  links: [   
+  links: [
     {
-      title: 'Company',
-      links: [
-        { text: 'Our Story', href: '#' },
-        { text: 'Services', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Contact Us', href: '#' },
-      ],
-    },
+      title: 'Home',
+      links:[
+      {
+        text: 'Our Story',
+        href: getPermalink("#our-story"),
+      },
+      {
+        text: 'Products',
+        href: getPermalink("#products"),
+      },
+      {
+        text: 'Contact Us',
+        href: getPermalink("#form"),
+      },
+  ]}
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Gat no 174, Ganesh Nagar Rd, Near Talawade, Maharashtra 412114' },
   ],
 
 };
